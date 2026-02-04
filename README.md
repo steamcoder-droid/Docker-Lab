@@ -45,16 +45,16 @@ Example (structure may vary):
 ```text
 docker-lab/
 │
-├── service-a/
-│   ├── src/
+├── auth-service/
+│   ├── index.js
 │   └── package.json
 │
-├── service-b/
-│   ├── app/
-│   └── requirements.txt
+├── product-service/
+│   ├── index.js
+│   └── package.json
 │
 ├── frontend/
-│   └── ...
+│   └── index.html
 │
 └── README.md
 ```
@@ -85,7 +85,7 @@ Dockerfile
 
 For **each service**:
 
-* Create a `Dockerfile`
+* Create a `Dockerfile` in the directory of each service
 * Use an appropriate base image
 * Copy application files
 * Install dependencies
@@ -141,7 +141,10 @@ services:
       - backend
 ```
 
-
+## Some Hints
+* The application requires a postgreSQL database
+* Use any Webserver of your choice to host the frontend
+* Use environment variables 
 
 ## ▶️ Running the Application
 

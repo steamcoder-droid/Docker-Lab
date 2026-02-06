@@ -237,9 +237,3 @@ If you want to go further:
 Built by **Raphael**
 GitHub: [https://github.com/lemrex](https://github.com/lemrex)
 
-
-
-
-* Add **Docker interview challenges** based on this lab
-
-Just say the word 🚀

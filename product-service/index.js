@@ -31,7 +31,7 @@ async function requireAuth(req, res, next) {
   }
 
   try {
-    const response = await fetch("http://3.15.33.107/validate", {
+    const response = await fetch("http://auth:4000/validate", {
       headers: { Authorization: authHeader }
     });
 

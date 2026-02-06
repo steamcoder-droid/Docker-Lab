@@ -31,7 +31,7 @@ async function requireAuth(req, res, next) {
   }
 
   try {
-    const response = await fetch("http://localhost:4000/validate", {
+    const response = await fetch("http://auth:4000/validate", {
       headers: { Authorization: authHeader }
     });
 
@@ -69,4 +69,8 @@ app.post("/products", requireAuth, async (req, res) => {
   res.json(result.rows[0]);
 });
 
+<<<<<<< HEAD
 app.listen(5000, () => console.log("Product service running on 5000"));
+=======
+app.listen(5000, () => console.log("Product service running on 5000"));
+>>>>>>> my-changes

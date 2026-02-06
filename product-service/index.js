@@ -69,8 +69,6 @@ app.post("/products", requireAuth, async (req, res) => {
   res.json(result.rows[0]);
 });
 
-<<<<<<< HEAD
+
 app.listen(5000, () => console.log("Product service running on 5000"));
-=======
-app.listen(5000, () => console.log("Product service running on 5000"));
->>>>>>> my-changes
+
